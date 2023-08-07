@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hide{
+    display: none;
+}
+li{
+    list-style: none;
+}
+.mtb{
+    margin: 1rem 0;
+}
+.rm{
+    margin-bottom: 1rem !important;
+}
+.ash{
+    color: rgb(102, 97, 97);
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+}
+#container section{
+    padding: 1.7rem 8rem 0rem 8rem;
+    position: relative;
+}
+#container section nav{
+    height: 8vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#container section nav .open{
+    display: none;
+}
+#container section nav .loc ul{
+    display: flex;
+    list-style: none;
+}
+#container section nav .loc ul a{
+    margin-left: 1.3rem;
+}
+#container section nav .loc ul a:hover{
+    color: rgb(194, 72, 72);;
+}
+#container section .mid{
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-gap: 0.5rem;
+}
+#container section .mid .left img{
+    width: 100%;
+}
+#container section .mid .left .lup :nth-child(2){
+    display: none;
+}
+#container section .mid .left .ldwn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#container section .mid .left .ldwn .lef{
+    display: flex;
+    align-items: center;
+}
+#container section .mid .left .ldwn .lef h3{
+    font-size: 3.4rem;
+    line-height: 0.9;
+    max-width: 80%;
+}
+#container section .mid .left .ldwn .ri p{
+font-size: 1.3rem;
+}
+#container section .mid .left .ldwn .ri button{
+    background-color: rgb(194, 72, 72);
+    border: none;
+    padding: 1rem 1rem;
+    color: white;
+    margin-top: 1.2rem;
+}
+#container section .mid .left .ldwn .ri button:hover{
+    background-color: rgb(19, 19, 31);
+}
+#container section .mid .right{
+    background-color: rgb(19, 19, 31);
+    color: white;
+    padding: 1.3rem 1.5rem;
+}
+#container section .mid .right h2{
+    color: goldenrod;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#container section .mid .right .fel .crds a{
+    color: inherit;
+    font-size: 1.4rem;
+}
+#container section .mid .right .fel .crds a:hover{
+    color: goldenrod;
+}
+#container section .mid .right .fel .crds p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+#container section .mid .right .fel .crds{
+    margin-top: 1rem;
+}
+.bm{
+    border-bottom: 1px solid white;
+}
+#container section .btm .rep{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#container section .btm .rep .crds{
+    display: flex;
+}
+#container section .btm .rep .crds img{
+    width: 4.3rem;
+    margin-right: 1rem;
+}
+#container section .btm .rep .crds .ri a{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+#container section .btm .rep .crds .ri a:hover{
+    color: rgb(194, 72, 72);
+}
+#container section .btm .rep .crds .ri p{
+    font-size: 1.2rem;
+}
+footer{
+    text-align: center;
+    margin-top: 1rem;
+}
+@media(max-width:480px){
+    #container section nav .loc{
+        display: none;
+    }
+    #container section{
+        padding: 0;
+    }
+    #container section .mid{
+        display: flex;
+        flex-direction: column;
+    }
+    #container section .mid .left .ldwn{
+        margin: 2rem 0 4rem 0;
+        display: flex;
+        flex-direction:column;
+    }
+    #container section .mid .left .lup :nth-child(1){
+        display: none;
+    }
+    #container section .mid .left .lup :nth-child(2){
+        display: block;
+    }
+    #container section .mid .left .ldwn .lef h3{
+        max-width: 90%;
+    }
+    #container section .btm .rep{
+        display: block;
+    }
+    #container section .btm .rep .crds{
+        margin: 1rem 0;
+    }
+    #container section .modal{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    #container section .modal .back .wit{
+      position: absolute;
+      right: 0;
+      background-color: white;
+      width: 65vw;
+      height: 100vh;
+    }
+    #container section .modal .back .wit .cancel{
+        float: right;
+        margin-top: 1rem;
+    }
+    #container section .modal .back .wit ul{
+        margin-left: 2rem;
+        margin-top: 8rem;
+    } 
+    #container section .modal .back .wit ul li{
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    #container section .modal .back .wit ul li a{
+        color: black;
+    }
+    #container section nav .open{
+        display: block;
+    }
+}
